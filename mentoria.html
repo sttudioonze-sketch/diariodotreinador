@@ -2626,6 +2626,19 @@
   @media (min-width:1440px){
     .item-largo{grid-column:1 / -1}
   }
+  .capa .capa-selo.capa-selo-inscricoes{
+    min-height:44px;
+    padding:9px 16px;
+    background:var(--mint);
+    color:#1a1d2e;
+    border-color:transparent;
+    box-shadow:none;
+    font-size:clamp(13px,2.8vw,16px);
+    font-weight:800;
+    text-decoration:none;
+  }
+  .capa .capa-selo-inscricoes::before{background:currentColor}
+  .capa .capa-selo-inscricoes:hover{background:#f9fafb;color:#1a1d2e}
 </style>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="glass.css">
@@ -2655,7 +2668,7 @@
       <div class="capa-texto">
         <img class="capa-assinatura" src="assinatura-gabriel.png" width="726" height="300" alt="Gabriel Bussinger" />
 
-        <span class="capa-selo" data-i18n="selo">Temporada 2026, inscrições abertas</span>
+        <a class="capa-selo capa-selo-inscricoes" href="#planos" data-i18n="selo">Temporada 2027 · Inscrições abertas</a>
 
         <h1><span data-i18n="h1a">Mentoria Diário do Treinador</span> <em data-i18n="h1b">Conheça, aplique e transforme</em></h1>
 
@@ -3059,7 +3072,7 @@
   var TEXTOS = {
     pt: {
       voltar:"Voltar",
-      selo:"Temporada 2026, inscrições abertas",
+      selo:"Temporada 2027 · Inscrições abertas",
       h1a:"Mentoria Diário do Treinador", h1b:"Conheça, aplique e transforme",
       heroSub:"Descubra o poder que o conhecimento pode trazer para a sua carreira e sua vida.",
       btn1:"Ver a metodologia", btn2:"Ver os planos",
@@ -3137,7 +3150,7 @@
     },
     en: {
       voltar:"Back",
-      selo:"2026 season, enrollment open",
+      selo:"2027 season · Enrollment open",
       h1a:"Coach's Diary Mentorship", h1b:"Learn it, apply it, transform",
       heroSub:"Discover what knowledge can do for your career and your life.",
       btn1:"See the method", btn2:"See the plans",
@@ -3215,7 +3228,7 @@
     },
     es: {
       voltar:"Volver",
-      selo:"Temporada 2026, inscripciones abiertas",
+      selo:"Temporada 2027 · Inscripciones abiertas",
       h1a:"Mentoría Diario del Entrenador", h1b:"Conoce, aplica, transforma",
       heroSub:"Descubre lo que el conocimiento puede hacer por tu carrera y por tu vida.",
       btn1:"Ver la metodología", btn2:"Ver los planes",
