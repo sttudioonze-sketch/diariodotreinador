@@ -2639,6 +2639,19 @@
   }
   .capa .capa-selo-inscricoes::before{background:currentColor}
   .capa .capa-selo-inscricoes:hover{background:#f9fafb;color:#1a1d2e}
+
+.mentoria-editorial { padding-block: clamp(2rem,5vw,3.5rem); color:#f9fafb }
+.mentoria-editorial-heading { display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:.6rem 1rem }
+.mentoria-editorial h2 { margin:0; font:500 clamp(1.45rem,3vw,2.1rem)/1.15 Outfit,sans-serif }
+.mentoria-editorial a { color:inherit; text-underline-offset:.2em }
+.mentoria-editorial-heading > a { color:#9edbdb; font-size:.85rem }
+.mentoria-editorial ul { margin:1rem 0 0; padding:0; list-style:none; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:0 1.5rem }
+.mentoria-editorial li { border-top:1px solid #a1cdd544 }
+.mentoria-editorial li a { display:block; padding:.75rem 0; text-decoration:none }
+.mentoria-editorial li a:hover { text-decoration:underline }
+.mentoria-editorial li small { display:block; margin-bottom:.16rem; color:#9edbdb; font-size:.74rem }
+.mentoria-editorial { background:#1a1d2e; border-radius:1rem; padding-inline:clamp(1rem,3vw,2rem) }
+@media(max-width:580px) { .mentoria-editorial ul { grid-template-columns:1fr } }
 </style>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="glass.css">
@@ -3056,6 +3069,18 @@
   <div class="faixa">
     <div class="meio-campo meio-campo-fecho" aria-hidden="true"></div>
   </div>
+
+
+  <section class="faixa mentoria-editorial" id="blog" aria-labelledby="blog-titulo">
+    <div class="mentoria-editorial-heading">
+      <h2 id="blog-titulo">Blog Diário do Treinador</h2>
+      <a href="blog/" hreflang="pt-BR">Ver todos os artigos</a>
+    </div>
+    <ul>
+      <li><a href="blog/como-evoluir-na-carreira-de-treinador.html" hreflang="pt-BR"><small>Desenvolvimento profissional</small>Como evoluir na carreira de treinador</a></li>
+      <li><a href="blog/de-jogador-a-treinador.html" hreflang="pt-BR"><small>Transição de carreira</small>De jogador a treinador</a></li>
+    </ul>
+  </section>
 
   <!-- ============ RODAPÉ ============ -->
   <footer class="faixa rodape">
